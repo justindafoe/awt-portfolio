@@ -1,0 +1,320 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    background: #6ad0ae;
+}
+
+#grid{
+    display: grid;
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 100%;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(25px, auto);
+    grid-template-areas: 
+    "log log log hdr hdr hdr hdr hdr soc nbt"
+    "log log log hdr hdr hdr hdr hdr soc nbt"
+    "log log log hdr hdr hdr hdr hdr soc nbt"
+    "log log log hdr hdr hdr hdr hdr soc nbt"
+    " .   .   .   .   .   .   .   .   .   . "
+    "abt abt abt abt abt abt abt  .  pic pic"
+    "abt abt abt abt abt abt abt  .  pic pic"
+    "abt abt abt abt abt abt abt  .  pic pic"
+    "abt abt abt abt abt abt abt  .  pic pic"
+    "abt abt abt abt abt abt abt  .  pic pic"
+    " .   .   .   .   .   .   .   .   .   . "
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+    "prj prj  .  pji pji pji pji pji pji pji"
+
+   
+    " .   .   .   .   .   .   .   .   .   . "
+    "skl skl skl skl skl skl skl skl skl skl"
+    "htm htm css css jvs jvs csp csp jav jav"
+    "htm htm css css jvs jvs csp csp jav jav"
+    "htm htm css css jvs jvs csp csp jav jav"
+    "htm htm css css jvs jvs csp csp jav jav"
+    "htm htm css css jvs jvs csp csp jav jav"
+    " .   .   .   .   .   .   .   .   .   . "
+    "ctc ctc ctc ctc ctc ctc ctc ctc ctc ctc"
+    "ctc ctc ctc ctc ctc ctc ctc ctc ctc ctc"
+    "ctc ctc ctc ctc ctc ctc ctc ctc ctc ctc"
+    "ctc ctc ctc ctc ctc ctc ctc ctc ctc ctc"
+    " .   .   .   .   .   .   .   .   .   . "
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr"
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr"
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+}
+header {
+    display: grid;
+    grid-area: hdr;
+}
+#headerText{
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+#social {
+    display: grid;
+    grid-area: soc;
+
+    justify-items: center;
+   align-content: center;
+}
+#nav{
+    display: grid;
+    grid-area: nbt;
+
+    align-items: center;
+    z-index: 20;
+ 
+}
+#navLink{
+    right: -320px;
+    background-color: #6ad0ae;
+    width: 180px;
+    height: 100vh;
+    padding: 100px 30px;
+    justify-self: right;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    padding-top: 300px;
+   
+    
+}
+    a{
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family:  'Roboto Mono', monospace;
+        text-decoration: none;
+    }
+    
+    .line{
+
+        width: 42px;
+        height: 8px;
+        margin: 5px 0;
+        background: #000;
+        border-radius: 4px;
+        z-index: 20;
+    
+    }
+      
+        
+#logo {
+    display: grid;
+    grid-area: log;
+
+    width: 400px;
+    z-index: 9;
+    position: relative;
+    animation: logo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    padding-left: 25px;
+}
+    @keyframes logo {
+        0% {top: -300px;}
+        100% {top: 0px;}
+    }
+
+#about{
+    display: grid;
+    grid-area: abt;
+
+    
+}
+    .bio{
+        position: relative;
+        text-align: center;
+        font-weight: 400;
+        font-family: 'Roboto Mono', monospace;
+        animation-name: bio;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+        @keyframes bio {
+            0% {left: -500px}
+            100% { left: 0px;}
+        }
+
+    .myPhoto{
+        border: 4px solid #000;
+        border-radius: 10px;
+    }
+
+    .aboutDetails{
+        text-align: left;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.2em;
+        animation-name: aboutDetails;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+        @keyframes aboutDetails {
+            0% {left: -500px;}
+            100% {left: 0px;}
+        }
+
+#bioPic{
+    display: grid;
+    grid-area: pic;
+}
+#projects{
+    display: grid;
+    grid-area: prj;
+    overflow: hidden;
+    width: 300px;
+}
+
+#projectInfo{
+    display: grid;
+    grid-area: pji;
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    animation-name: bio;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;  
+}
+    .projectDetails{
+        text-align: left;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.2em;
+        animation-name: aboutDetails;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes bio {
+        0% {right: -500px}
+        100% { right: 0px;}
+    }
+
+#skills{
+    display: grid;
+    grid-area: skl;
+    font-weight: 600;
+    text-align: center;
+    font-family:'Roboto Mono', monospace;
+}
+#htmlLogo{
+    display: grid;
+    grid-area: htm;
+
+    justify-items: center;
+}
+#cssLogo{
+    display: grid;
+    grid-area: css;
+ 
+    justify-items: center;
+
+}
+#jsLogo{
+    display: grid;
+    grid-area: jvs;
+
+    justify-items: center;
+}
+#cSharpLogo{
+    display: grid;
+    grid-area: csp;
+  
+    justify-items: center;
+}
+#javaLogo{
+    display: grid;
+    grid-area: jav;
+ 
+    justify-items: center;
+}
+#contact{
+    display: grid;
+    grid-area: ctc;
+   
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family:'Roboto Mono', monospace;
+    text-align: center;
+}
+    .contactHeader{
+        font-size: 1.6em;
+        font-weight: 700;
+        font-family:'Roboto Mono', monospace;
+        text-align: center;
+    }
+    .messageBox{
+        width: 400px;
+        height: 200px;
+        border-radius: 10px;
+    }
+footer{
+    display: grid;
+    grid-area: ftr;
+    background: #ccf;
+    font-size: .9em;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+/*///////////////// MEDIA QUERY ///////////////////*/   
+    @media(max-width: 720px)
+    {
+        #grid{
+            display: grid;
+            background: #abbaab;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(25px, auto);
+            grid-template-areas: 
+            " log " 
+            " hdr "
+            " nbt " 
+            " soc " 
+            " pic "
+            " pic "
+            " abt "
+            " prj "
+            " pji "
+            " skl "
+            " htm "
+            " css "
+            " jvs "
+            " csp "
+            " jav "
+            " ctc "
+            " ftr ";
+          
+            }
+
+         
+          
+    }

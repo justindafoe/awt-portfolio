@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Justin Dafoe</title>
+</head>
+<body>
+   <div id= navLink>
+    <a href="#">home</a><br>
+    <a href="#about">about</a><br>
+    <a href="#projects">projects</a><br>
+    <a href="#skills">skills</a><br> 
+    <a href="#contact">contact</a><br> 
+   </div> 
+    <div id="grid">
+        <header id="headerText">
+            <h1> Justin Dafoe</h1>
+            <p>web developer</p>
+        </header>
+        <div id="social">
+            <img  src="assets/images/twitter-64-black.png" alt="twitter">
+            <img  src="assets/images/linkedin-64-black.png" alt="linkedIn">
+           
+        </div>
+        <div id="nav">
+            <div id="navBtn" onclick="ToggleNav();">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div id="logo">
+            <img src="assets/images/Untitled-1.png" alt="JD Logo">
+        </div>
+       
+        <div id="about">
+            <div class="bio">
+                <h1>About Myself</h1>
+                <p class="aboutDetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore porro modi qui
+                     consequatur placeat, sapiente dolorum provident maiores earum. Cum corrupti dolor
+                      aspernatur neque cupiditate saepe ratione vero illum reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quibusdam nisi? Dolorum iusto rem, esse dolorem magni,
+                     ab, ullam neque tenetur eos sequi reiciendis adipisci nihil! Reiciendis voluptate aut ex?</p>
+            </div>
+           
+        </div>
+        <div id="bioPic">
+            <img class="myPhoto" src="assets/images/biopic.jpg" alt="Picture">
+        </div>
+        <div id="projectInfo">
+            <h1>Project Examples</h1>
+                <p class ="projectDetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus necessitatibus et! Explicabo eum delectus itaque esse,
+                     ab asperiores enim! Tempore similique incidunt, eveniet alias a aliquam temporibus ea voluptate?
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus accusantium fuga perferendis assumenda nihil est, dolorem veritatis saepe tempora,
+                      a totam suscipit minus fugit perspiciatis? Suscipit voluptas magni voluptate!
+                </p>
+        </div>
+        <div id="projects">
+           <img id="sImage" src="assets/images/carousel.jpg" alt="carousel images">
+        </div>
+        <div id="skills">
+            <h2>Skills</h2>
+        </div>
+        <div id="htmlLogo">
+            <img src="assets/images/html5200x200.png" alt="html Logo">
+        </div>
+        <div id="cssLogo">
+            <img src="assets/images/css200x200.png" alt="css badge">
+        </div>
+        <div id="jsLogo">
+            <img src="assets/images/javascript200x200.png" alt="javaScript Logo">
+        </div>
+        <div id="cSharpLogo">
+            <img src="assets/images/csharp200x200.png" alt="C Sharp Logo">
+        </div>
+        <div id="javaLogo">
+            <img src="assets/images/java200x200.png" alt="Java Logo">
+        </div>
+        <div id="contact">
+            <h1 class="contactHeader">Contact Me via Email</h1>
+            <form action="/action_page.php">
+                <label for="fullname">First and Last Name:</label><br>
+                <input type="text" id="name" name="fullname" value="enter name here..."><br>
+                <label for="email">email address:</label><br>
+                <input type="email" id="email" name="email" value="enter your email..."><br><br>
+                <label for="message">Let's Connect</label><br>
+                <input class ="messageBox"type="message" id="message" name="message" value=""><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+
+        </div>
+        <footer>
+            &copy; Justin Dafoe
+        </footer>
+    </div>
+    
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
